@@ -7,65 +7,69 @@
     <title>Contato</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <ul id="menu">
         <li> <a href="index.html">Home</a> </li>
         <li> <a href="contato.html">Contato</a> </li>
     </ul>
-    
-    <div class="center">
-        <h1>Entre em contato comigo</h1>
 
-    <form >
-        <label for="nome">Nome</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email</label>
-        <input type="text" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto</label>
-        <textarea name="assunto" id="assunto" cols="60" rows="05"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <h1 class="center">Entre em contato comigo</h1>
 
+    <div class="centerContainer marginBottom">
+        <div>
+            <h2>Mande uma mensagem</h2>
+            <form >
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
+                <label for="assunto">Assunto</label>
+                <textarea name="assunto" id="assunto" cols="60" rows="05" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
     </div>
 
-    <div class="center">
-    <h2>Endereço</h2>
-    <p>São Paulo</p>
-    <p>Rua do Arouche 24</p>
+    <div class="centerContainer">
 
+        <div>
+            <h2>Endereço</h2>
+            <p>São Paulo</p>
+            <p>Rua do Arouche 24</p>
+            
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.725116348875!2d-46.6428717!3d-23.5439632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd2049233e54937b!2sMuseu%20da%20Diversidade%20Sexual%20do%20Estado%20de%20S.%20Paulo%20(MDS)!5e0!3m2!1spt-BR!2sbr!4v1634781311926!5m2!1spt-BR!2sbr" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>  
+        </div>
     </div>
-    
-    
-   <div class="center">
-    <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.725116348875!2d-46.6428717!3d-23.5439632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd2049233e54937b!2sMuseu%20da%20Diversidade%20Sexual%20do%20Estado%20de%20S.%20Paulo%20(MDS)!5e0!3m2!1spt-BR!2sbr!4v1634781311926!5m2!1spt-BR!2sbr" 
-    width="600" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy"></iframe>  
-   </div>
 
-   <hr>
-   <footer>
-       <div class="center">
-           <a href="https://www.linkedin.com/in/larissaimdacosta067841123/">
-            <img class="tamanho" src="assets/img/linkedin.png" alt="linkedin">
-        </a>
-       
-       </div>
-       <p class="center">
-        Todos os direitos reservados: Larissa Inacio Machado da Costa &copy
-       </p>
-    
-   </footer>
+    <hr>
+    <footer>
+        <div class="centerContainer">
+            <a href="https://www.linkedin.com/in/larissaimdacosta067841123/">
+             <img class="tamanho" src="assets/img/linkedin.png" alt="linkedin">
+         </a>
+        
+        </div>
+        <p class="center">
+         Todos os direitos reservados: Larissa Inacio Machado da Costa &copy
+        </p>
+     
+    </footer>
    
+   <script src="assets/js/script.js"></script>
     
 </body>
 </html>

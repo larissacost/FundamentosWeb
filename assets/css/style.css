@@ -13,6 +13,12 @@
     justify-content: flex-end;
     align-items: center;
 }
+.centerContainer{
+    display: flex;
+    flex-flow: row ;
+    justify-content: center;
+    align-items: center;
+}
 #menu li{
     display: inline;
     padding: 15px;
@@ -41,4 +47,10 @@
 }
 .marginBottom{
     margin-bottom: 50px;
+}
+.marginLeft{
+    margin-left: 50px;
+}
+.marginRight{
+    margin-right: 50px;
 }
